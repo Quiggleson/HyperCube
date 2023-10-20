@@ -1,0 +1,9 @@
+(Done Mar 1 1am, could be more efficient probably) Implement recursive moveVertex: make a list of backwards neighbors so we can access every neighbor
+Fix setPoints: When the bit number gets too big, there's a problem with painting them because the current way to paint uses the pixels as
+    way to access the vertices in the array
+Clean it up:
+    - double check setVertices to see if there's a cleaner way
+    - (done) remove keylistener until you're actually going to implement it
+    - (done mostly) set variables (dimension, bits, diameter, etc.) editable in Main -> allows for easier scanner class implementation
+    - paintVerts
+    - leftX, rightX, topY, bottomY crap needs to be cleaned (probably not even useful since we gotta repaint the whole screen -> unless we can use reverseNeighbors to just paint what we need)
